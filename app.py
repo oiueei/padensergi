@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "<body style='padding: 50px; color: #777; font-size: 14px; font-family: Georgia, serif; font-weight: normal; text-align: center;'>" \
+    return "<body style='padding: 50px; color: #777; font-size: 20px; font-family: Georgia, serif; font-weight: normal; text-align: center;'>" \
              "<h2 style='font-size: 3.5em; line-height: 1em; text-align: center; margin-top: 0; font-weight: normal;'>Pa d’en Sergi</h2>" \
              "<h3 style='font-size: 1.75em; margin-top: -1.5em; letter-spacing: 0.2em; text-align: center; font-weight: normal;'>(<i>Fet en silenci</i>)</h3>" \
              "<h4 style='font-size: 1.5em; text-align: center; margin: 0.5em; font-weight: normal;'><b>Whatsapp:</b> 650 751 854</br>" \
