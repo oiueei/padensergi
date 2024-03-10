@@ -11,9 +11,6 @@ def index():
              "<b>Whatsapp:</b> 650 751 854</br>" \
              "<h4 style='font-size: 1.5em; text-align: center; margin: 0.5em; font-weight: normal;'><b>Correu electrònic:</b> " \
                "<a style='color: #777; text-decoration: none' href='mailto:padensergi@gmail.com'>padensergi@gmail.com</a></h4>" \
-             "<h4 style='font-size: 1.5em; text-align: center; margin: 0.5em; font-weight: normal;'><b>Adreça:</b> Carrer Sant Pere 18, 08470, Sant Celoni</h4>" \
-             "<h4 style='font-size: 1.5em; text-align: center; margin: 0.5em; font-weight: normal;'><b>Horari:</b> de dilluns a divendres de 17 a 20h " \
-               "</br> Dissabtes i diumenges tancat</h4>" \
              "<div style='margin: 60px 0; padding: 0;'>" \
                "<img style='margin: 0 0 -5px 0; padding: 0; width: 95%;' src='https://res.cloudinary.com/oiueei/image/upload/v1676535188/padensergi/jzzeeg65bhjlgavucw0w.jpg'>" \
                "<img style='margin: 0 0 -5px 0; padding: 0; width: 95%;' src='https://res.cloudinary.com/oiueei/image/upload/v1676535186/padensergi/q3ii8mkdmjnts3trc5rq.jpg'>" \
