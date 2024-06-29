@@ -1,6 +1,29 @@
 from flask import Flask
+from flask_mail import Mail, Message
+from decouple import config
 
 app = Flask(__name__)
+
+# Configure Flask-Mail
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USERNAME'] = config('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = config('MAIL_PASSWORD')
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+mail = Mail(app)
+
+@app.route("/mail")
+def send_email():
+    msg = Message(subject=config('MAIL_SUBJECT'),
+                  sender=config('MAIL_SENDER'),
+                  recipients=[config('MAIL_RECIPIENTS')],
+    )
+
+    msg.body = config('MAIL_BODY')
+    mail.send(msg)
+
+    return "Email sent!"
 
 @app.route("/")
 def index():
